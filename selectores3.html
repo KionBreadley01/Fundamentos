@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>producto clases y pseudoelementos </title>
+    <style>
+        div{
+            background-color: aquamarine;
+            color: brown;
+
+        }
+        /* psudi clases */
+        div:hover{
+            background-color:bisque;
+            color: aquamarine;
+        }
+        
+        input:focus{
+            background-color: bisque;
+            color: blanchedalmond;
+        }
+        input:required{
+            background-color:aqua;
+            color: aqua;
+        }
+        .cuadrado{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(92, 163, 90);
+            float: left;
+            border: 2px solid blue;
+        }
+        .cuadrado:first-child{
+            background-color:blueviolet;
+        }
+        .cuadrado:last-child{
+            background-color: red;
+        }
+        .cuadrado:nth-child{
+            background-color: aqua;
+        }
+        p::first-letter{
+            color: aqua;
+        }
+        p::before{
+            content: '🙌';
+
+        }
+    </style>
+</head>
+<body>
+    <div>Este es un Div</div>
+    <div>Este es un Div</div>
+    <div>Este es un Div</div>
+<input type="text"name="" id="" required>
+<input type="text"name="" id="">
+<input type="text"name="" id="">
+<div class="container">
+<div class="cuadrado">Div 1</div>
+<div class="cuadrado">Div 2</div>
+<div class="cuadrado">Div 3</div>
+<div class="cuadrado">Div 4</div>
+<div class="cuadrado">Div 5</div>
+<div class="cuadrado">Div 6</div>
+</div>
+<p>Parrafo</p>
+<p>Parrafo</p>
+<p>Parrafo</p>
+</body>
+</html>
